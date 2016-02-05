@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simonbonzon.crunchtime.MainActivity"
+    android:id="@+id/a">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caloriesEditText"
+        android:imeOptions="actionDone"
+        android:hint="#"
+        android:layout_alignParentTop="false"
+        android:layout_toEndOf="@+id/caloriesBurnedTextView"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/caloriesBurnedTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calories Burned:"
+        android:id="@+id/caloriesBurnedTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pushups:"
+        android:id="@+id/pushupsTextView"
+        android:layout_below="@+id/caloriesEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Situps:"
+        android:id="@+id/situpsTextView"
+        android:layout_below="@+id/pushupsTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jumping Jacks:"
+        android:id="@+id/jumpingJacksTextView"
+        android:layout_below="@+id/situpsTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jogging:"
+        android:id="@+id/joggingTextView"
+        android:layout_below="@+id/jumpingJacksTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/pushupsEditText"
+        android:layout_alignBaseline="@+id/pushupsTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"
+        android:layout_alignParentStart="false"
+        android:layout_alignStart="@id/caloriesEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/situpsEditText"
+        android:layout_alignStart="@+id/pushupsEditText"
+        android:layout_alignBaseline="@+id/situpsTextView"
+        android:imeOptions="actionDone"
+        android:hint="#" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/jumpingJacksEditText"
+        android:layout_alignStart="@+id/situpsEditText"
+        android:layout_alignBaseline="@+id/jumpingJacksTextView"
+        android:imeOptions="actionDone"
+        android:hint="#" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/joggingEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/joggingTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reps"
+        android:id="@+id/repsTextView"
+        android:layout_toEndOf="@+id/pushupsEditText"
+        android:layout_alignBaseline="@+id/pushupsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reps"
+        android:id="@+id/repsTextView2"
+        android:layout_toEndOf="@+id/situpsEditText"
+        android:layout_alignBaseline="@+id/situpsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView2"
+        android:layout_toEndOf="@+id/joggingEditText"
+        android:layout_alignBaseline="@+id/joggingEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView"
+        android:layout_toEndOf="@id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/jumpingJacksTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Squats:"
+        android:id="@+id/squatsTextView"
+        android:layout_below="@+id/joggingTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/squatsEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/squatsTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reps"
+        android:id="@+id/repsTextView3"
+        android:layout_toEndOf="@+id/squatsEditText"
+        android:layout_alignBaseline="@+id/squatsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Leg-lift:"
+        android:id="@+id/legLiftTextView"
+        android:layout_below="@+id/squatsTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/legLiftEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/legLiftTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView3"
+        android:layout_toEndOf="@+id/legLiftEditText"
+        android:layout_alignBaseline="@+id/legLiftEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Plank:"
+        android:id="@+id/plankTextView"
+        android:layout_below="@+id/legLiftTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/plankEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/plankTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView4"
+        android:layout_toEndOf="@+id/plankEditText"
+        android:layout_alignBaseline="@+id/plankEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pullups:"
+        android:id="@+id/pullupsTextView"
+        android:layout_below="@+id/plankTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/pullupsEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/pullupsTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reps"
+        android:id="@+id/repsTextView4"
+        android:layout_toEndOf="@+id/pullupsEditText"
+        android:layout_alignBaseline="@+id/pullupsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cycling:"
+        android:id="@+id/cyclingTextView"
+        android:layout_below="@+id/pullupsTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/cyclingEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/cyclingTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView5"
+        android:layout_toEndOf="@+id/cyclingEditText"
+        android:layout_alignBaseline="@+id/cyclingEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Walking:"
+        android:id="@+id/walkingTextView"
+        android:layout_below="@+id/cyclingTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/walkingEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/walkingTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView6"
+        android:layout_toEndOf="@+id/walkingEditText"
+        android:layout_alignBaseline="@+id/walkingEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Swimming:"
+        android:id="@+id/swimmingTextView"
+        android:layout_below="@+id/walkingTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/swimmingEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/swimmingTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView7"
+        android:layout_toEndOf="@+id/swimmingEditText"
+        android:layout_alignBaseline="@+id/swimmingEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stair-Climing:"
+        android:id="@+id/stairClimbingTextView"
+        android:layout_below="@+id/swimmingTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/stairClimbingEditText"
+        android:layout_alignStart="@+id/jumpingJacksEditText"
+        android:layout_alignBaseline="@+id/stairClimbingTextView"
+        android:imeOptions="actionDone"
+        android:hint="#"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Minutes"
+        android:id="@+id/minutesTextView8"
+        android:layout_toEndOf="@+id/stairClimbingEditText"
+        android:layout_alignBaseline="@+id/stairClimbingEditText" />
+
+</RelativeLayout>
